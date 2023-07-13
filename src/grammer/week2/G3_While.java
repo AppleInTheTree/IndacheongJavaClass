@@ -6,10 +6,14 @@ public class G3_While {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int randNumber = random.nextInt(20);
+        boolean isTrue = true;
+
+        int randNumber = random.nextInt(10);
 
         while (true) {
+
             System.out.println("Enter a new number: ");
+
             int inputNumber = scanner.nextInt();
 
             if (randNumber > inputNumber) {
@@ -20,8 +24,9 @@ public class G3_While {
             }
             else {
                 System.out.println("Bingo");
-                break;
+//                isTrue = false;
             }
         }
+
     }
 }
