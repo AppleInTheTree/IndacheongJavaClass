@@ -7,14 +7,7 @@ public class Q2_PrimeNumber { // 첫 50개의 소수 출력, 한줄에 10개 씩
         int startingNum = 2;
 
         while (count < MAX) {
-            boolean isPrime = true;
-            for (int divisor = 2; divisor < startingNum; divisor++) {
-                if (startingNum % divisor == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-            if (isPrime) {
+            if (isPrime(startingNum)) {
                 count++;
                 if (count % 10 == 0) {
                     System.out.println(startingNum);
@@ -26,5 +19,18 @@ public class Q2_PrimeNumber { // 첫 50개의 소수 출력, 한줄에 10개 씩
 
             startingNum++;
         }
+    }
+
+    private static boolean isPrime(int startingNum) {
+        //boolean isPrime = true;
+        for (int divisor = 2; divisor < startingNum; divisor++) {
+            if (startingNum % divisor == 0) {
+                //isPrime = false;
+                //break;
+                return false;
+            }
+        }
+//        return isPrime;
+        return true;
     }
 }

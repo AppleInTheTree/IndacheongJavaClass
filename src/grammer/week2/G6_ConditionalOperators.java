@@ -8,7 +8,7 @@ public class G6_ConditionalOperators {
         String color = scanner.next();
         String answer = "red";
 
-        System.out.println(color.equals(answer) ? "red" :  ("other color " + color));
+        System.out.println(color.equals(answer) ? "red" : ("other color " + color));
     }
 }
 
