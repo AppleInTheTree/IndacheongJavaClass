@@ -7,6 +7,7 @@ public class Q2_PrimeNumber { // 첫 50개의 소수 출력, 한줄에 10개 씩
         int startingNum = 2;
 
         while (count < MAX) {
+
             if (isPrime(startingNum)) {
                 count++;
                 if (count % 10 == 0) {
